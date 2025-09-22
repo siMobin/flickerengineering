@@ -1,0 +1,80 @@
+[
+    {
+        "title": "Modern Commercial Complex",
+        "image": "https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg",
+        "tags": [
+            "Structural Design",
+            "Commercial",
+            "Sustainable"
+        ],
+        "description": "20-story commercial building with innovative structural design and sustainable features.",
+        "year": "2023",
+        "location": "Dhaka, Bangladesh",
+        "category": "Commercial"
+    },
+    {
+        "title": "Highway Bridge Construction",
+        "image": "https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg",
+        "tags": [
+            "Bridge Design",
+            "Infrastructure",
+            "Transportation"
+        ],
+        "description": "Major highway bridge project connecting two districts with advanced engineering solutions.",
+        "year": "2023",
+        "location": "Chittagong, Bangladesh",
+        "category": "Infrastructure"
+    },
+    {
+        "title": "Residential Tower Development",
+        "image": "https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg",
+        "tags": [
+            "Residential",
+            "High-rise",
+            "Seismic Design"
+        ],
+        "description": "Luxury residential towers with earthquake-resistant design and modern amenities.",
+        "year": "2022",
+        "location": "Dhaka, Bangladesh",
+        "category": "Residential"
+    },
+    {
+        "title": "Industrial Manufacturing Plant",
+        "image": "https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg",
+        "tags": [
+            "Industrial",
+            "Manufacturing",
+            "Specialized"
+        ],
+        "description": "Large-scale manufacturing facility with specialized structural requirements.",
+        "year": "2022",
+        "location": "Gazipur, Bangladesh",
+        "category": "Industrial"
+    },
+    {
+        "title": "Educational Institution Campus",
+        "image": "https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg",
+        "tags": [
+            "Educational",
+            "Campus",
+            "Sustainable"
+        ],
+        "description": "Modern university campus with multiple buildings and sustainable design principles.",
+        "year": "2023",
+        "location": "Sylhet, Bangladesh",
+        "category": "Institutional"
+    },
+    {
+        "title": "Hospital Complex Project",
+        "image": "https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg",
+        "tags": [
+            "Healthcare",
+            "Complex",
+            "Specialized"
+        ],
+        "description": "State-of-the-art hospital complex with specialized medical facility requirements.",
+        "year": "2022",
+        "location": "Dhaka, Bangladesh",
+        "category": "Institutional"
+    }
+]
