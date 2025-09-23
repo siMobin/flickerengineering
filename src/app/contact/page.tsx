@@ -30,7 +30,7 @@ export default function ContactUsPage() {
       <main>
         <section className="py-16 hero-bg text-center text-white px-6 md:px-20 ">
           <h1 className="text-6xl font-bold mb-4 max-w-4xl mx-auto">
-            Let's Start Your Next Project
+            Let&apos;s Start Your Next Project
           </h1>
           <p className="max-w-4xl mx-auto">
             Ready to transform your engineering vision into reality? Get in

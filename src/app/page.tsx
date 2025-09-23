@@ -25,17 +25,16 @@ export default function Home() {
 
       <main className="w-full">
         {/* Hero */}
-        <section className="grid gap-6 md:grid-cols-2 items-center hero-bg  overflow-hidden p-4">
-          <div className="md:col-span-1 max-w-xl">
-            <div
-              className="inline-block mb-6 px-4 py-2 rounded-full"
-              style={{ background: "rgba(255,255,255,0.06)" }}
-            >
+        <section className="grid gap-6 md:grid-cols-2 items-center hero-bg  overflow-hidden p-4 md:px-20">
+          <div className="md:col-span-1 max-w-xl relative z-10 ">
+            <span className="pre-tag"></span>
+            <div className="tag inline-flex items-center gap-2 mb-6 px-4 py-3 rounded-full bg-accent/10 backdrop-blur-[5px] shadow">
+              <CircleCheckBig className="w-5 h-5 text-accent" />
               <span className="text-sm">Professional Engineering Services</span>
             </div>
 
             <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-2">
-              <span>Building Tomorrow's</span>
+              <span>Building Tomorrow&apos;s</span>
               <br />
               <span
                 className="text-4xl font-extrabold"
@@ -88,18 +87,17 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative ">
-            <div className="logo-card w-full max-w-lg">
+          <div className="relative h-min">
+            <div className="logo-card w-full max-w-lg  backdrop-blur-[20px]">
               <div className="badge-top-right badge-white text-center">
                 100+<div className="text-xs mt-1">Projects Completed</div>
               </div>
               <div className="h-72 flex items-center justify-center">
-                <Image
-                  src="/logo.png"
+                <img
+                  src="/images/hero.png"
                   alt="Flicker Engineering"
-                  width={360}
-                  height={220}
-                  className="opacity-90"
+                  className="w-full scale-117 h-auto absolute top-0 left-[-1em]"
+                  loading="lazy"
                 />
               </div>
               <div className="badge-bottom-left badge-white">
@@ -124,7 +122,7 @@ export default function Home() {
             </h2>
             <p className="text-gray-600">
               From concept to completion, we offer a full spectrum of
-              engineering services tailored to your project's unique needs.
+              engineering services tailored to your project&apos;s unique needs.
             </p>
           </div>
 
@@ -217,7 +215,7 @@ export default function Home() {
 
         <ProjectsSection />
       </main>
-      <div className="flex justify-center mb-6">
+      <div className="flex justify-center mb-6 mt-4">
         <span className="text-sm font-medium px-4 py-2 rounded-full bg-accent/10 w-max text-center flex items-center gap-2 text-accent">
           <Mail size={18} />
           <p>Contact Us</p>

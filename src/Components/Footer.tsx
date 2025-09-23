@@ -15,7 +15,12 @@ export default function Footer() {
         {/* Company Info */}
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <img src="/logo.png" alt="Flicker Engineering" className="w-36" />
+            <img
+              src="/logo.png"
+              alt="Flicker Engineering"
+              className="w-36"
+              loading="lazy"
+            />
             <div>
               {/* <h2 className="font-bold text-lg">Flicker Engineering</h2>
               <p className="text-sm text-gray-300">Professional Solutions</p> */}
@@ -113,8 +118,10 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-blue-800 py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center text-gray-300 text-sm">
-        <p>© 2024 Flicker Engineering. All rights reserved.</p>
+      <div className="bg-blue-900 border-t border-blue-800 py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center text-gray-300 text-sm">
+        <p>
+          © {new Date().getFullYear()} Flicker Engineering. All rights reserved.
+        </p>
         <div className="flex gap-6 mt-2 md:mt-0">
           <a href="#" className="hover:text-white">
             Privacy Policy

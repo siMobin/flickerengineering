@@ -1,7 +1,8 @@
+"use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail } from "lucide-react";
 
 const Header = () => {
@@ -20,7 +21,7 @@ const Header = () => {
   const navItems = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Services", href: "/#services" },
+    { name: "Services", href: "/services" },
     { name: "Portfolio", href: "/#portfolio" },
     { name: "Contact", href: "/contact" },
   ];
@@ -46,14 +47,10 @@ const Header = () => {
 
       {/* Main Navbar */}
       <nav
-        className={`sticky top-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? "bg-accent/10 backdrop-blur-md shadow-elegant text-accent"
-            : "bg-accent/100 backdrop-blur-sm text-black"
-        }`}
+        className={`navbar sticky top-0 z-50 ${isScrolled ? "scrolled" : ""}`}
       >
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center h-20">
+          <div className="flex justify-between items-center ">
             {/* Logo */}
             <Link
               href="/"
@@ -62,16 +59,17 @@ const Header = () => {
               <img
                 src="/logo.png"
                 alt="Flicker Engineering Logo"
-                className="h-12 w-auto"
+                className="h-16 w-auto"
+                loading="lazy"
               />
-              <div>
+              {/* <div>
                 <h1 className="text-xl font-bold text-primary">
                   Flicker Engineering
                 </h1>
                 <p className="text-xs text-muted-foreground">
                   Professional Solutions
                 </p>
-              </div>
+              </div> */}
             </Link>
 
             {/* Desktop Navigation */}
@@ -80,23 +78,22 @@ const Header = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`font-medium transition-all duration-300 hover:text-primary relative group ${
-                    pathname === item.href ? "text-primary" : "text-foreground"
+                  className={`nav-link ${
+                    pathname === item.href ? "active" : ""
                   }`}
                 >
                   {item.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               ))}
-              <Button size="default" asChild>
+              <button className="btn-primary">
                 <Link href="/contact">Get Quote</Link>
-              </Button>
+              </button>
             </div>
 
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 hover:bg-accent rounded-lg transition-colors"
+              className="lg:hidden p-2 rounded-lg transition-colors bg-accent/30 shadow-xs text-white"
             >
               {isOpen ? (
                 <X className="w-6 h-6" />
@@ -108,16 +105,18 @@ const Header = () => {
 
           {/* Mobile Navigation */}
           {isOpen && (
-            <div className="lg:hidden bg-white border-t border-border animate-slide-up">
-              <div className="py-4 space-y-2">
+            <div className="lg:hidden mobile-nav animate-slide-up bg-transparent ">
+              <div
+                className={`p-4 rounded space-y-2 flex flex-col gap-2 navbar sticky top-0 z-50 ${
+                  isScrolled ? "scrolled" : ""
+                }`}
+              >
                 {navItems.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className={`block px-4 py-3 font-medium transition-colors hover:bg-accent rounded-lg ${
-                      pathname === item.href
-                        ? "text-primary bg-accent"
-                        : "text-foreground"
+                    className={`mobile-link nav-link w-min ${
+                      pathname === item.href ? "active" : ""
                     }`}
                     onClick={() => setIsOpen(false)}
                   >
@@ -125,14 +124,12 @@ const Header = () => {
                   </Link>
                 ))}
                 <div className="px-4 pt-2">
-                  <Button
-                    size="default"
-                    className="w-full"
-                    asChild
+                  <button
+                    className="btn-primary w-full"
                     onClick={() => setIsOpen(false)}
                   >
                     <Link href="/contact">Get Quote</Link>
-                  </Button>
+                  </button>
                 </div>
               </div>
             </div>

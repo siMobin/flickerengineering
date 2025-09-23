@@ -1,6 +1,13 @@
 import React from "react";
 import projectsData from "../../private/projects.json";
-import { Settings } from "lucide-react";
+import {
+  ArrowBigLeft,
+  ArrowLeft,
+  ArrowRight,
+  CircleArrowOutUpRight,
+  Settings,
+} from "lucide-react";
+import Link from "next/link";
 
 interface Project {
   title: string;
@@ -28,7 +35,7 @@ const ProjectsSection: React.FC = () => {
     <section className="py-16 bg-gray-50" id="portfolio">
       <div className="flex justify-center mb-6">
         <span className="text-sm font-medium px-4 py-2 rounded-full bg-accent/10 w-max text-center flex items-center gap-2 text-accent">
-          <Settings size={18} />
+          <CircleArrowOutUpRight size={18} />
           <p>Our Portfolio</p>
         </span>
       </div>
@@ -44,12 +51,12 @@ const ProjectsSection: React.FC = () => {
         </p>
       </div>
       <div className="container mx-auto px-4">
-        <div className="flex justify-center space-x-4 mb-12">
+        <div className="flex justify-center overflow-x-auto space-x-4 mb-12">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setFilter(cat)}
-              className={`px-6 py-2 rounded-full text-lg font-medium transition-colors duration-300
+              className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors duration-300
                 ${
                   filter === cat
                     ? "bg-accent text-white"
@@ -70,7 +77,8 @@ const ProjectsSection: React.FC = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-68 object-cover"
+                loading="lazy"
               />
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-3">
@@ -101,10 +109,14 @@ const ProjectsSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <button className="bg-accent text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-blue-700 transition-colors duration-300">
-            Load More Projects
-          </button>
+        <div className="flex justify-center items-center">
+          <Link
+            href="/services"
+            className="animate-shake-x inline-flex justify-center mt-12 items-center gap-2 bg-accent/10 text-accent border border-accent/20 hover:bg-accent/20 transition-colors duration-300 px-2 py-1 rounded-full "
+          >
+            See More
+            <ArrowRight size={20} className="" />
+          </Link>
         </div>
       </div>
     </section>
