@@ -40,8 +40,8 @@ const ProjectsSection: React.FC = () => {
         </span>
       </div>
 
-      <div className="mb-6 text-center max-w-2xl mx-auto">
-        <h2 className="text-4xl font-semibold mb-2">
+      <div className="mb-6 p-4 text-center max-w-2xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-2">
           Showcasing Engineering Excellence
         </h2>
         <p className="text-gray-600">
@@ -97,13 +97,13 @@ const ProjectsSection: React.FC = () => {
                 <p className="text-gray-700 text-base mb-4">
                   {project.description}
                 </p>
-                <div className="flex justify-between items-center text-gray-500 text-sm">
+                <div className="flex justify-between gap-4 items-start text-gray-500 text-sm">
                   <span>{project.year}</span>
                   <span>{project.location}</span>
                 </div>
-                <button className="mt-6 w-full bg-accent text-white py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                {/* <button className="mt-6 w-full bg-accent text-white py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300">
                   View Details
-                </button>
+                </button> */}
               </div>
             </div>
           ))}

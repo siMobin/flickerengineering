@@ -1,80 +1,133 @@
 [
     {
-        "title": "Modern Commercial Complex",
-        "image": "https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg",
+        "title": "Modern Residential Duplex",
+        "image": "/images/projects/duplex-1.jpeg",
         "tags": [
-            "Structural Design",
-            "Commercial",
-            "Sustainable"
-        ],
-        "description": "20-story commercial building with innovative structural design and sustainable features.",
-        "year": "2023",
-        "location": "Dhaka, Bangladesh",
-        "category": "Commercial"
-    },
-    {
-        "title": "Highway Bridge Construction",
-        "image": "https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg",
-        "tags": [
-            "Bridge Design",
-            "Infrastructure",
-            "Transportation"
-        ],
-        "description": "Major highway bridge project connecting two districts with advanced engineering solutions.",
-        "year": "2023",
-        "location": "Chittagong, Bangladesh",
-        "category": "Infrastructure"
-    },
-    {
-        "title": "Residential Tower Development",
-        "image": "https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg",
-        "tags": [
+            "Contemporary Design",
             "Residential",
-            "High-rise",
-            "Seismic Design"
+            "Green Architecture"
         ],
-        "description": "Luxury residential towers with earthquake-resistant design and modern amenities.",
-        "year": "2022",
+        "description": "A contemporary two-story residential duplex featuring vertical gardens, open balconies, and eco-friendly elements, situated in a lush, urban environment.",
+        "year": "2025",
         "location": "Dhaka, Bangladesh",
         "category": "Residential"
     },
     {
-        "title": "Industrial Manufacturing Plant",
-        "image": "https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg",
+        "title": "Community Mosque",
+        "image": "/images/projects/mosque-1.jpeg",
         "tags": [
-            "Industrial",
-            "Manufacturing",
-            "Specialized"
+            "Religious Architecture",
+            "Institutional",
+            "Traditional Design"
         ],
-        "description": "Large-scale manufacturing facility with specialized structural requirements.",
-        "year": "2022",
-        "location": "Gazipur, Bangladesh",
-        "category": "Industrial"
-    },
-    {
-        "title": "Educational Institution Campus",
-        "image": "https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg",
-        "tags": [
-            "Educational",
-            "Campus",
-            "Sustainable"
-        ],
-        "description": "Modern university campus with multiple buildings and sustainable design principles.",
-        "year": "2023",
+        "description": "A three-story mosque featuring traditional Islamic architectural elements with intricate brickwork and perforated screen designs. Designed to serve as a religious and educational hub for the local community.",
+        "year": "2025",
         "location": "Sylhet, Bangladesh",
         "category": "Institutional"
     },
     {
-        "title": "Hospital Complex Project",
-        "image": "https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg",
+        "title": "Modern Living-Dining Interior",
+        "image": "/images/projects/Living-Dining Interior-1.jpeg",
         "tags": [
-            "Healthcare",
-            "Complex",
-            "Specialized"
+            "Interior Design",
+            "Residential",
+            "Modern",
+            "Minimalist"
         ],
-        "description": "State-of-the-art hospital complex with specialized medical facility requirements.",
-        "year": "2022",
-        "location": "Dhaka, Bangladesh",
-        "category": "Institutional"
+        "description": "A modern open-concept living and dining area featuring elegant wood paneling, geometric room dividers, soft neutral tones, and layered lighting design. The space blends comfort with contemporary aesthetics.",
+        "year": "2025",
+        "location": "Chattogram, Bangladesh",
+        "category": "Interior"
+    },
+    {
+        "title": "Modern Open Concept Living Space",
+        "image": "/images/projects/Living space-1.jpeg",
+        "tags": [
+            "Contemporary Interior",
+            "Residential",
+            "Open Plan",
+            "Living Room",
+            "Dining Area"
+        ],
+        "description": "An interior shot of a modern open-concept living and dining area in a residential setting, featuring minimalist furniture, recessed lighting, and a neutral color palette with dark grey sofas and a light wood dining set. Green plants add a touch of nature.",
+        "year": "2023",
+        "location": "Not specified, but representative of modern urban homes",
+        "category": "Interior Design"
+    },
+    {
+        "title": "Modern Multi-Story Residence",
+        "image": "/images/projects/Multi-Story Residence-1.jpeg",
+        "tags": [
+            "Contemporary Architecture",
+            "Residential",
+            "Multi-Story",
+            "Balconies",
+            "Pergola"
+        ],
+        "description": "An exterior view of a modern multi-story residential building featuring a white facade with contrasting red panel accents. The design incorporates multiple balconies with stone railings and a prominent white pergola structure over the entrance. Set against a clear blue sky and green lawn.",
+        "year": "2023",
+        "location": "Not specified, but representative of modern suburban architecture",
+        "category": "Architectural Design"
+    },
+    {
+        "title": "Contemporary Apartment Building",
+        "image": "/images/projects/Apartment-1.jpeg",
+        "tags": [
+            "Modern Architecture",
+            "Residential Building",
+            "Apartments",
+            "Balconies",
+            "Urban Living"
+        ],
+        "description": "A striking modern apartment building with multiple floors, featuring a white facade contrasted with dark brown brickwork and vertical wooden slats. The structure includes numerous balconies with brown railings and large windows, surrounded by green landscaping and trees under a clear blue sky.",
+        "year": "2024",
+        "location": "Not specified, suitable for urban or suburban developments",
+        "category": "Architectural Design"
+    },
+    {
+        "title": "Modern Suburban House with Greenery",
+        "image": "/images/projects/Suburban House-1.jpeg",
+        "tags": [
+            "Contemporary Home",
+            "Residential",
+            "Suburban Architecture",
+            "Landscaped Garden",
+            "Duplex"
+        ],
+        "description": "A modern two-story suburban house with a grey brick texture and white architectural accents. The property features a well-maintained green lawn, a patterned driveway, and a variety of trees and shrubs. The design includes a covered porch entrance and multiple large windows and balconies, all under a dynamic cloudy sky.",
+        "year": "2023",
+        "location": "Not specified, typical of modern residential areas",
+        "category": "Architectural Design"
+    },
+    {
+        "title": "Modern Institutional Entrance Gate with Guardhouse",
+        "image": "/images/projects/Gate-1.jpeg",
+        "tags": [
+            "Entrance Gate",
+            "Architectural Design",
+            "Institutional",
+            "Guardhouse",
+            "Modern Design",
+            "Security"
+        ],
+        "description": "A modern and robust entrance gate featuring a large beige-orange archway with text in Bengali, likely indicating an institution or college. The gate combines white vertical slats with horizontal brown accents and is flanked by a compact guardhouse. The surrounding area includes a red brick wall, lush greenery, palm trees, and a paved road leading up to the entrance.",
+        "year": "2023",
+        "location": "Bangladesh or West Bengal, India (indicated by Bengali text)",
+        "category": "Architectural Design"
+    },
+    {
+        "title": "Nurjahan Khusru Adarsha High School Entrance",
+        "image": "/images/projects/gate-2.jpeg",
+        "tags": [
+            "School Entrance",
+            "High School",
+            "Institutional Architecture",
+            "Modern Gate Design",
+            "Tangail"
+        ],
+        "description": "The main entrance of Nurjahan Khusru Adarsha High School in Kalhati, Tangail. The design features a prominent archway with the school's name, flanked by modern vertical slat pillars and a security gate. The surrounding perimeter wall incorporates white panels with vertical green and brick accents, all set amidst lush green landscaping and trees under a dark blue sky.",
+        "year": "2023",
+        "location": "Kalhati, Tangail",
+        "category": "Institutional Architecture"
     }
 ]

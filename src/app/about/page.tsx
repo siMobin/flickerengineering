@@ -11,6 +11,7 @@ import {
   CircleCheckBig,
   Sparkle,
 } from "lucide-react";
+import TeamMember from "@/Components/TeamMember";
 
 export default function About() {
   const stats = [
@@ -75,7 +76,7 @@ export default function About() {
       <main>
         {/* Hero Section */}
         <section className="py-16 hero-bg text-center text-white px-6 md:px-20">
-          <h1 className="text-6xl font-bold mb-4 max-w-4xl mx-auto">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 max-w-4xl mx-auto">
             About Flicker Engineering
           </h1>
           <p className="max-w-4xl mx-auto">
@@ -139,6 +140,7 @@ export default function About() {
           </div>
         </section>
       </main>
+      <TeamMember />
       <Footer />
     </>
   );

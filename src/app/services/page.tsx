@@ -72,7 +72,9 @@ export default function ServicesPage() {
       >
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
-          <h1 className="text-5xl font-bold">Our Engineering Services</h1>
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">
+            Our Engineering Services
+          </h1>
           <p className="text-lg mt-2 max-w-2xl">
             Delivering excellence and innovation in every project, tailored to
             meet your unique engineering needs.
@@ -89,7 +91,7 @@ export default function ServicesPage() {
         </div>
 
         <div className="mb-6 text-center max-w-2xl mx-auto">
-          <h1 className="text-4xl font-semibold mb-2">
+          <h1 className="text-2xl lg:text-4xl font-semibold mb-2">
             Comprehensive Engineering Services
           </h1>
           <p className="text-gray-600">
@@ -106,15 +108,15 @@ export default function ServicesPage() {
             >
               <div className="flex items-center gap-4 mb-4">
                 <div className="inline-block p-3 rounded-lg bg-accent text-white">
-                  <s.icon className="w-8 h-8" />
+                  <s.icon className="size-4 lg:size-6" />
                 </div>
-                <h2 className="text-2xl font-bold">{s.title}</h2>
+                <h2 className="text-xl lg:text-2xl font-bold">{s.title}</h2>
               </div>
 
               <ul className="text-gray-600 space-y-3">
                 {s.items.map((it) => (
                   <li key={it} className="flex items-start gap-3">
-                    <BadgeCheck size={20} className="mt-1 text-accent" />
+                    <BadgeCheck size={28} className="mt-1 text-accent" />
                     <span>{it}</span>
                   </li>
                 ))}
@@ -131,7 +133,7 @@ export default function ServicesPage() {
             </span>
           </div>
           <div className="mb-6 text-center max-w-2xl mx-auto">
-            <h2 className="text-4xl font-semibold mb-2">
+            <h2 className="text-2xl lg:text-4xl font-semibold mb-2">
               Our Commitment to Excellence
             </h2>
             <p className="text-gray-600">
@@ -141,7 +143,7 @@ export default function ServicesPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto text-center">
             <div className="p-6 rounded-xl bg-accent/10 shadow">
-              <h3 className="text-2xl font-bold mb-2">Expert Team</h3>
+              <h3 className="text-xl lg:text-2xl font-bold">Expert Team</h3>
               <p>
                 Our team of certified engineers and project managers brings
                 years of experience and a passion for excellence to every
@@ -149,7 +151,9 @@ export default function ServicesPage() {
               </p>
             </div>
             <div className="p-6 rounded-xl bg-accent/10 shadow">
-              <h3 className="text-2xl font-bold mb-2">Innovative Solutions</h3>
+              <h3 className="text-xl lg:text-2xl font-bold">
+                Innovative Solutions
+              </h3>
               <p>
                 We leverage the latest technologies and innovative approaches to
                 solve complex engineering challenges and deliver superior
@@ -157,7 +161,7 @@ export default function ServicesPage() {
               </p>
             </div>
             <div className="p-6 rounded-xl bg-accent/10 shadow">
-              <h3 className="text-2xl font-bold mb-2">Client-Centric</h3>
+              <h3 className="text-xl lg:text-2xl font-bold">Client-Centric</h3>
               <p>
                 Your vision is our priority. We work closely with you to
                 understand your needs and deliver customized solutions that

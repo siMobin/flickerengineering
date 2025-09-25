@@ -20,10 +20,10 @@ const Header = () => {
 
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
+    { name: "About Us", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Portfolio", href: "/#portfolio" },
-    { name: "Contact", href: "/contact" },
+    // { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -34,14 +34,16 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
-              <span>+880-XXX-XXXXXX</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Mail className="w-4 h-4" />
-              <span>info@flickerengineering.com</span>
+              <Link href="tel:+88 01711-98 9282">+88 01711-98 9282</Link>
+              <Link href="tel:+88 01682-70 8000">+88 01682-70 8000</Link>
             </div>
           </div>
-          <div className="text-sm">Professional Engineering Services</div>
+          <div className="flex items-center gap-2">
+            <Mail className="w-4 h-4" />
+            <Link href="mailto:flicker.engineering.architect@gmail.com">
+              flicker.engineering.architect@gmail.com
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -115,7 +117,7 @@ const Header = () => {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className={`mobile-link nav-link w-min ${
+                    className={`mobile-link nav-link w-min truncate ${
                       pathname === item.href ? "active" : ""
                     }`}
                     onClick={() => setIsOpen(false)}

@@ -7,6 +7,7 @@ import {
   Phone,
   Mail,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -98,16 +99,17 @@ export default function Footer() {
             <li className="flex items-start gap-3">
               <MapPin size={18} className="text-blue-400" />
               <p>
-                123 Engineering Street
-                <br />
-                Dhaka, Bangladesh
-                <br />
-                Postal Code: 1000
+                74/1-B, Malibagh Chowdhurypara, Malibadh, Dhaka-1219, Dhaka,
+                Bangladesh
               </p>
             </li>
             <li className="flex items-center gap-3">
               <Phone size={18} className="text-blue-400" />
-              <span>+880-XXX-XXXXXXX</span>
+              <div>
+                <Link href="tel:+88 01682-70 8000">+88 01682-70 8000</Link>
+                <br />
+                <Link href="tel:+88 01711-98 9282">+88 01711-98 9282</Link>
+              </div>
             </li>
             <li className="flex items-center gap-3">
               <Mail size={18} className="text-blue-400" />

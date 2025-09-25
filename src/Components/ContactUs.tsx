@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin, Clock, CircleCheckBig } from "lucide-react";
+import Link from "next/link";
 
 export default function ContactSection() {
   const [form, setForm] = useState({
@@ -35,6 +36,7 @@ export default function ContactSection() {
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
+                disabled
                 type="text"
                 name="name"
                 placeholder="Your full name"
@@ -44,6 +46,7 @@ export default function ContactSection() {
                 className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <input
+                disabled
                 type="email"
                 name="email"
                 placeholder="your@email.com"
@@ -56,6 +59,7 @@ export default function ContactSection() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
+                disabled
                 type="tel"
                 name="phone"
                 placeholder="+880-XXX-XXXXXXX"
@@ -64,6 +68,7 @@ export default function ContactSection() {
                 className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <input
+                disabled
                 type="text"
                 name="subject"
                 placeholder="Project inquiry"
@@ -74,6 +79,7 @@ export default function ContactSection() {
             </div>
 
             <textarea
+              disabled
               name="message"
               placeholder="Tell us about your project requirements..."
               rows={4}
@@ -107,11 +113,8 @@ export default function ContactSection() {
               <div>
                 <h4 className="font-semibold">Our Location</h4>
                 <p className="text-sm text-gray-500">
-                  123 Engineering Street
-                  <br />
-                  Dhaka, Bangladesh
-                  <br />
-                  Postal Code: 1000
+                  74/1-B, Malibagh Chowdhurypara, Malibadh, Dhaka-1219, Dhaka,
+                  Bangladesh
                 </p>
               </div>
             </div>
@@ -121,22 +124,25 @@ export default function ContactSection() {
               <div>
                 <h4 className="font-semibold">Phone Number</h4>
                 <p className="text-sm text-gray-500">
-                  +880-XXX-XXXXXXX
+                  <Link href="tel:+88 01682-70 8000">+88 01682-70 8000</Link>
                   <br />
-                  +880-XXX-XXXXXXX
+                  <Link href="tel:+88 01711-98 9282">+88 01711-98 9282</Link>
                 </p>
               </div>
             </div>
 
-            <div className="bg-white shadow rounded-lg p-4 flex gap-3">
-              <Mail className="text-accent w-5 h-5 mt-1" />
-              <div>
+            <div className="bg-white shadow rounded-lg p-4 flex flex-col gap-3">
+              <div className="inline-flex gap-3">
+                <Mail className="text-accent w-5 h-5 mt-1" />
                 <h4 className="font-semibold">Email Address</h4>
-                <p className="text-sm text-gray-500">
-                  info@flickerengineering.com
-                  <br />
-                  support@flickerengineering.com
-                </p>
+              </div>
+              <div>
+                <Link
+                  href="mailto:flicker.engineering.architect@gmail.com"
+                  className="text-sm text-gray-500 text-wrap"
+                >
+                  flicker.engineering.architect@gmail.com
+                </Link>
               </div>
             </div>
 
@@ -144,13 +150,11 @@ export default function ContactSection() {
               <Clock className="text-accent w-5 h-5 mt-1" />
               <div>
                 <h4 className="font-semibold">Working Hours</h4>
-                <p className="text-sm text-gray-500">
-                  Mon - Fri: 9:00 AM - 6:00 PM
-                  <br />
-                  Sat: 9:00 AM - 2:00 PM
-                  <br />
-                  Sun: Closed
-                </p>
+                <span className="text-sm text-gray-500">
+                  <p>Saturday - Thursday: 9:00 AM - 6:00 PM</p>
+                  {/* <br /> */}
+                  <p className="text-red-500 italic">Friday: Closed</p>
+                </span>
               </div>
             </div>
           </div>

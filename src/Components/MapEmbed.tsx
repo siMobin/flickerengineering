@@ -1,6 +1,7 @@
 export default function MapEmbed() {
-  const lat = 23.8103; // example latitude (Dhaka)
-  const lng = 90.4125; // example longitude
+  // 23.752472939510906, 90.41570219571854
+  const lat = 23.752472939510906; // example latitude (Dhaka)
+  const lng = 90.41570219571854; // example longitude
 
   return (
     <div className="w-full h-full rounded-lg overflow-hidden shadow">

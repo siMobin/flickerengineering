@@ -35,7 +35,9 @@ export default function Testimonials() {
         </span>
       </div>
       <div className="mb-6 text-center max-w-2xl mx-auto">
-        <h2 className="text-4xl font-semibold mb-2">What Our Clients Say</h2>
+        <h2 className="text-2xl lg:text-4xl font-semibold mb-2">
+          What Our Clients Say
+        </h2>
         <p className="text-gray-600">
           We are proud to have worked with amazing clients who trust us with
           their most important projects.

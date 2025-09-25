@@ -17,96 +17,18 @@ import {
 import Link from "next/link";
 import ProjectsSection from "../Components/ProjectsSection";
 import ContactUs from "@/Components/ContactUs";
+import Slider from "@/Components/Slider";
+import MapEmbed from "@/Components/MapEmbed";
 
 export default function Home() {
   return (
     <div className="min-h-screen font-sans text-[16px] leading-[1.5]">
       <Header />
 
+      {/* Hero */}
+      <Slider />
+
       <main className="w-full">
-        {/* Hero */}
-        <section className="grid gap-6 md:grid-cols-2 items-center hero-bg  overflow-hidden p-4 md:px-20">
-          <div className="md:col-span-1 max-w-xl relative z-10 ">
-            <span className="pre-tag"></span>
-            <div className="tag inline-flex items-center gap-2 mb-6 px-4 py-3 rounded-full bg-accent/10 backdrop-blur-[5px] shadow">
-              <CircleCheckBig className="w-5 h-5 text-accent" />
-              <span className="text-sm">Professional Engineering Services</span>
-            </div>
-
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-2">
-              <span>Building Tomorrow&apos;s</span>
-              <br />
-              <span
-                className="text-4xl font-extrabold"
-                style={{ color: "var(--brand-gradient-to)" }}
-              >
-                Infrastructure Today
-              </span>
-            </h1>
-
-            <p className="text-lg text-white/85 mb-6">
-              Flicker Engineering delivers cutting-edge engineering solutions
-              with innovative technology and expert craftsmanship. Your vision,
-              our engineering excellence.
-            </p>
-
-            <ul className="features-list grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-              <li>
-                <span style={{ color: "var(--brand-gradient-to)" }}>
-                  <CircleCheckBig />
-                </span>{" "}
-                Expert Engineering Team
-              </li>
-              <li>
-                <span style={{ color: "var(--brand-gradient-to)" }}>
-                  <CircleCheckBig />
-                </span>{" "}
-                Innovative Solutions
-              </li>
-              <li>
-                <span style={{ color: "var(--brand-gradient-to)" }}>
-                  <CircleCheckBig />
-                </span>{" "}
-                Quality Assurance
-              </li>
-              <li>
-                <span style={{ color: "var(--brand-gradient-to)" }}>
-                  <CircleCheckBig />
-                </span>{" "}
-                Timely Delivery
-              </li>
-            </ul>
-
-            <div className="flex gap-4">
-              <a href="/contact" className="btn-primary">
-                Get Started Today →
-              </a>
-              <a href="/portfolio" className="btn-secondary">
-                View Our Work
-              </a>
-            </div>
-          </div>
-
-          <div className="relative h-min">
-            <div className="logo-card w-full max-w-lg  backdrop-blur-[20px]">
-              <div className="badge-top-right badge-white text-center">
-                100+<div className="text-xs mt-1">Projects Completed</div>
-              </div>
-              <div className="h-72 flex items-center justify-center">
-                <img
-                  src="/images/hero.png"
-                  alt="Flicker Engineering"
-                  className="w-full scale-117 h-auto absolute top-0 left-[-1em]"
-                  loading="lazy"
-                />
-              </div>
-              <div className="badge-bottom-left badge-white">
-                10+<div className="text-xs mt-1">Years Experience</div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Services */}
         <section className="mt-12 px-4">
           <div className="flex justify-center mb-6">
@@ -117,7 +39,7 @@ export default function Home() {
           </div>
 
           <div className="mb-6 text-center max-w-2xl mx-auto">
-            <h2 className="text-4xl font-semibold mb-2">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-2">
               Comprehensive Engineering Services
             </h2>
             <p className="text-gray-600">
@@ -234,6 +156,9 @@ export default function Home() {
       </div>
       <ContactUs />
 
+      <div className="h-48 md:h-64 lg:h-96">
+        <MapEmbed />
+      </div>
       <Footer />
     </div>
   );
