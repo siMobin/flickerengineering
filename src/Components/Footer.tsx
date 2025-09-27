@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-900 text-white">
+    <footer className="text-white">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Company Info */}
         <div>
@@ -120,7 +120,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-blue-900 border-t border-blue-800 py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center text-gray-300 text-sm">
+      <div className="bg-blue-900 border-t border-blue-800/50 py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center text-gray-300 text-sm shadow">
         <p>
           © {new Date().getFullYear()} Flicker Engineering. All rights reserved.
         </p>

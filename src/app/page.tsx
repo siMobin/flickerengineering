@@ -90,10 +90,12 @@ export default function Home() {
                   "Design Review",
                 ],
               },
-            ].map((s) => (
+            ].map((s, i) => (
               <div
                 key={s.title}
                 className="p-4 rounded-xl transition-all duration-300 hover:shadow-lg bg-accent/10 shadow"
+                data-aos="fade-up"
+                data-aos-duration={i * 500}
               >
                 <div className="text-center">
                   <div className="mb- inline-block p-3 rounded-lg bg-accent text-white">

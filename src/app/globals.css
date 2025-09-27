@@ -369,3 +369,11 @@ body {
     @apply border border-gray-200 rounded-lg p-4 shadow-sm;
   }
 }
+
+/* footer */
+footer {
+  /* image and gradient background */
+  background: linear-gradient(180deg, oklch(37.758% 0.14662 265.787 / 0.95), oklch(37.758% 0.14662 265.787 / 0.95)), url('https://static.vecteezy.com/system/resources/previews/007/804/726/non_2x/bangkok-skyline-with-gray-landmarks-and-blue-sky-vector.jpg');
+  background-size: cover;
+  background-position: bottom;
+}

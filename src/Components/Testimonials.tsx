@@ -44,7 +44,7 @@ export default function Testimonials() {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {testimonials.map((t) => (
+        {testimonials.map((t, index) => (
           <div
             key={t.name}
             className="p-6 rounded-xl bg-accent/10 shadow text-center"
@@ -52,7 +52,10 @@ export default function Testimonials() {
             <img
               src={t.avatar}
               alt={t.name}
+              loading="lazy"
               className="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-accent"
+              data-aos="zoom-in"
+              data-aos-duration={index * 500}
             />
             <h3 className="text-xl font-bold">{t.name}</h3>
             <p className="text-sm text-gray-500 mb-2">{t.title}</p>

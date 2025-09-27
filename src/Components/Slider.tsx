@@ -91,7 +91,12 @@ const Slider = () => {
 
               <div className="relative h-min">
                 <div className="logo-card w-full max-w-lg  backdrop-blur-[20px]">
-                  <div className="badge-top-right badge-white text-center scale-50 lg:scale-100">
+                  <div
+                    className="badge-top-right badge-white text-center scale-50 lg:scale-100"
+                    data-aos="zoom-in"
+                    data-aos-delay="500"
+                    data-aos-duration="500"
+                  >
                     100+<div className="text-xs mt-1">Projects Completed</div>
                   </div>
                   <div className="h-14 lg:h-72 flex items-center justify-center">
@@ -100,9 +105,17 @@ const Slider = () => {
                       alt="Flicker Engineering"
                       className="w-full scale-117 h-auto absolute top-0 left-[-1em]"
                       loading="lazy"
+                      data-aos="fade-up"
+                      data-aos-anchor-placement="bottom-bottom"
+                      data-aos-duration="500"
                     />
                   </div>
-                  <div className="badge-bottom-left badge-white">
+                  <div
+                    className="badge-bottom-left badge-white"
+                    data-aos="zoom-in"
+                    data-aos-delay="1000"
+                    data-aos-duration="500"
+                  >
                     10+<div className="text-xs mt-1">Years Experience</div>
                   </div>
                 </div>

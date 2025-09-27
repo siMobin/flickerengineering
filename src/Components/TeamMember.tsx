@@ -43,6 +43,9 @@ export default function TeamMember() {
                 className="w-full h-56 md:h-full md:w-48 object-cover "
                 src={member.avatar}
                 alt={member.name}
+                loading="lazy"
+                data-aos="fade-right"
+                data-aos-duration={index * 500}
               />
             </div>
             <div className="flex flex-col justify-center p-4">
