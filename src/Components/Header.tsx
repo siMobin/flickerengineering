@@ -59,9 +59,9 @@ const Header = () => {
               className="flex items-center gap-3 hover:scale-105 transition-transform duration-300"
             >
               <img
-                src="/logo.png"
+                src="/logo.webp"
                 alt="Flicker Engineering Logo"
-                className="h-16 w-auto"
+                className="h-16 w-auto p-2 company-logo"
                 loading="lazy"
               />
               {/* <div>

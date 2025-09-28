@@ -17,9 +17,9 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-2 mb-4">
             <img
-              src="/logo.png"
+              src="/logo.webp"
               alt="Flicker Engineering"
-              className="w-36"
+              className="w-36 p-2 company-logo"
               loading="lazy"
             />
             <div>
