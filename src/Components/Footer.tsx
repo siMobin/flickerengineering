@@ -52,29 +52,29 @@ export default function Footer() {
           <h3 className="font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-gray-300 text-sm">
             <li>
-              <a href="#" className="hover:text-white">
+              <Link href="/" className="hover:text-white">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <Link href="/about" className="hover:text-white">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <Link href="/services" className="hover:text-white">
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <Link href="/#" className="hover:text-white">
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <Link href="/contact" className="hover:text-white">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -96,8 +96,8 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold mb-4">Contact Info</h3>
           <ul className="space-y-4 text-gray-300 text-sm">
-            <li className="flex items-start gap-3">
-              <MapPin size={18} className="text-blue-400" />
+            <li className="inline-flex items-start gap-3">
+              <MapPin size={36} className="text-blue-400" />
               <p>
                 74/1-B, Malibagh Chowdhurypara, Malibadh, Dhaka-1219, Dhaka,
                 Bangladesh
@@ -111,27 +111,21 @@ export default function Footer() {
                 <Link href="tel:+88 01711-98 9282">+88 01711-98 9282</Link>
               </div>
             </li>
-            <li className="flex items-center gap-3">
+            <li className="inline-flex items-center gap-3">
               <Mail size={18} className="text-blue-400" />
-              <span>info@flickerengineering.com</span>
+              <Link href="mailto:flicker.engineering.architect@gmail.com">
+                flicker.engineering.architect@gmail.com
+              </Link>
             </li>
           </ul>
         </div>
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-blue-900 border-t border-blue-800/50 py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center text-gray-300 text-sm shadow">
-        <p>
+      <div className="bg-blue-900 border-t border-blue-800/50 py-4 px-6 md:px-12 flex flex-col md:flex-row justify-center items-center text-gray-300 text-sm shadow">
+        <p className="text-center">
           © {new Date().getFullYear()} Flicker Engineering. All rights reserved.
         </p>
-        <div className="flex gap-6 mt-2 md:mt-0">
-          <a href="#" className="hover:text-white">
-            Privacy Policy
-          </a>
-          <a href="#" className="hover:text-white">
-            Terms of Service
-          </a>
-        </div>
       </div>
     </footer>
   );

@@ -61,7 +61,7 @@ export default function ServicesPage() {
     <div className="min-h-screen font-sans text-[16px] leading-[1.5]">
       <Header />
 
-      <section
+      <header
         className="relative h-80 bg-cover bg-center"
         style={{
           backgroundImage:
@@ -75,12 +75,12 @@ export default function ServicesPage() {
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">
             Our Engineering Services
           </h1>
-          <p className="text-lg mt-2 max-w-2xl">
+          <h2 className="text-lg mt-2 max-w-2xl">
             Delivering excellence and innovation in every project, tailored to
             meet your unique engineering needs.
-          </p>
+          </h2>
         </div>
-      </section>
+      </header>
 
       <main className="w-full py-12 px-4">
         <div className="flex justify-center mb-6">

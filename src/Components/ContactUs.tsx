@@ -10,6 +10,9 @@ export default function ContactSection() {
     subject: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -17,10 +20,36 @@ export default function ContactSection() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", form);
-    // Add API call logic here
+    setLoading(true);
+    setError("");
+    setSuccess(false);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message.");
+      }
+
+      setSuccess(true);
+      setForm({ name: "", email: "", phone: "", subject: "", message: "" }); // Clear form
+    } catch (err: unknown) {
+      let errorMessage = "Something went wrong. Please try again.";
+      if (err instanceof Error) {
+        errorMessage = err.message;
+      }
+      setError(errorMessage);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -36,7 +65,6 @@ export default function ContactSection() {
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
-                disabled
                 type="text"
                 name="name"
                 placeholder="Your full name"
@@ -46,7 +74,6 @@ export default function ContactSection() {
                 className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <input
-                disabled
                 type="email"
                 name="email"
                 placeholder="your@email.com"
@@ -59,7 +86,6 @@ export default function ContactSection() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
-                disabled
                 type="tel"
                 name="phone"
                 placeholder="+880-XXX-XXXXXXX"
@@ -68,7 +94,6 @@ export default function ContactSection() {
                 className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <input
-                disabled
                 type="text"
                 name="subject"
                 placeholder="Project inquiry"
@@ -79,7 +104,6 @@ export default function ContactSection() {
             </div>
 
             <textarea
-              disabled
               name="message"
               placeholder="Tell us about your project requirements..."
               rows={4}
@@ -91,10 +115,20 @@ export default function ContactSection() {
 
             <button
               type="submit"
-              className="w-full bg-accent text-white py-2 rounded-lg hover:bg-blue-700 transition"
+              disabled={loading}
+              className="w-full bg-accent text-white py-2 rounded-lg hover:bg-blue-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
             </button>
+
+            {success && (
+              <p className="text-green-600 text-sm mt-2">
+                Message sent successfully! We&apos;ll get back to you soon.
+              </p>
+            )}
+            {error && (
+              <p className="text-red-600 text-sm mt-2">Error: {error}</p>
+            )}
           </form>
         </div>
 

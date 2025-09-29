@@ -75,15 +75,15 @@ export default function About() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="py-16 hero-bg text-center text-white px-6 md:px-20">
+        <header className="py-16 hero-bg text-center text-white px-6 md:px-20">
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 max-w-4xl mx-auto">
             About Flicker Engineering
           </h1>
-          <p className="max-w-4xl mx-auto">
+          <h2 className="max-w-4xl mx-auto">
             Flicker Engineering is a leading provider of innovative engineering
             solutions. Our team of experts is dedicated to delivering
             high-quality services that meet the unique needs of each client.
-          </p>
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-xl mx-auto">
             {stats.map(({ icon: Icon, value, label }, i) => (
@@ -94,7 +94,7 @@ export default function About() {
               </div>
             ))}
           </div>
-        </section>
+        </header>
 
         {/* Mission & Vision */}
         <section className="grid md:grid-cols-2 gap-6 px-6 md:px-20 py-16 bg-gray-50 text-gray-700">

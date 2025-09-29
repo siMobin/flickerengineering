@@ -1,7 +1,10 @@
 [
     {
         "title": "Modern Residential Duplex",
-        "image": "/images/projects/duplex-1.jpeg",
+        "images": [
+            "/images/projects/duplex-1.webp",
+            "/images/projects/duplex-2.webp"
+        ],
         "tags": [
             "Contemporary Design",
             "Residential",
@@ -14,7 +17,10 @@
     },
     {
         "title": "Community Mosque",
-        "image": "/images/projects/mosque-1.jpeg",
+        "images": [
+            "/images/projects/mosque-1.webp",
+            "/images/projects/mosque-2.webp"
+        ],
         "tags": [
             "Religious Architecture",
             "Institutional",
@@ -26,8 +32,27 @@
         "category": "Institutional"
     },
     {
+        "title": "Shop Interior Design",
+        "images": [
+            "/images/projects/Shop-1.webp"
+        ],
+        "tags": [
+            "Interior Design",
+            "Commercial",
+            "Coffee Shop",
+            "Modern",
+            "Minimalist"
+        ],
+        "description": "A modern coffee shop interior design featuring a stylish wooden lattice partition, pendant lighting, sleek furniture, and wall art. The space combines functionality with a cozy and contemporary aesthetic, perfect for work and relaxation.",
+        "year": "2025",
+        "location": "Dhaka, Bangladesh",
+        "category": "Interior"
+    },
+    {
         "title": "Modern Living-Dining Interior",
-        "image": "/images/projects/Living-Dining Interior-1.jpeg",
+        "images": [
+            "/images/projects/Living-Dining Interior-1.webp"
+        ],
         "tags": [
             "Interior Design",
             "Residential",
@@ -41,7 +66,9 @@
     },
     {
         "title": "Modern Open Concept Living Space",
-        "image": "/images/projects/Living space-1.jpeg",
+        "images": [
+            "/images/projects/Living space-1.webp"
+        ],
         "tags": [
             "Contemporary Interior",
             "Residential",
@@ -56,7 +83,9 @@
     },
     {
         "title": "Modern Multi-Story Residence",
-        "image": "/images/projects/Multi-Story Residence-1.jpeg",
+        "images": [
+            "/images/projects/Multi-Story Residence-1.webp"
+        ],
         "tags": [
             "Contemporary Architecture",
             "Residential",
@@ -71,7 +100,9 @@
     },
     {
         "title": "Contemporary Apartment Building",
-        "image": "/images/projects/Apartment-1.jpeg",
+        "images": [
+            "/images/projects/Apartment-1.webp"
+        ],
         "tags": [
             "Modern Architecture",
             "Residential Building",
@@ -86,7 +117,10 @@
     },
     {
         "title": "Modern Suburban House with Greenery",
-        "image": "/images/projects/Suburban House-1.jpeg",
+        "images": [
+            "/images/projects/Suburban-House-1.webp",
+            "/images/projects/Suburban-House-2.webp"
+        ],
         "tags": [
             "Contemporary Home",
             "Residential",
@@ -100,24 +134,10 @@
         "category": "Architectural Design"
     },
     {
-        "title": "Modern Institutional Entrance Gate with Guardhouse",
-        "image": "/images/projects/Gate-1.jpeg",
-        "tags": [
-            "Entrance Gate",
-            "Architectural Design",
-            "Institutional",
-            "Guardhouse",
-            "Modern Design",
-            "Security"
-        ],
-        "description": "A modern and robust entrance gate featuring a large beige-orange archway with text in Bengali, likely indicating an institution or college. The gate combines white vertical slats with horizontal brown accents and is flanked by a compact guardhouse. The surrounding area includes a red brick wall, lush greenery, palm trees, and a paved road leading up to the entrance.",
-        "year": "2023",
-        "location": "Bangladesh or West Bengal, India (indicated by Bengali text)",
-        "category": "Architectural Design"
-    },
-    {
         "title": "Nurjahan Khusru Adarsha High School Entrance",
-        "image": "/images/projects/gate-2.jpeg",
+        "images": [
+            "/images/projects/gate-2.webp"
+        ],
         "tags": [
             "School Entrance",
             "High School",

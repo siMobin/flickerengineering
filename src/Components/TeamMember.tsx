@@ -42,7 +42,7 @@ export default function TeamMember() {
               <img
                 className="w-full h-56 md:h-full md:w-48 object-cover "
                 src={member.avatar}
-                alt={member.name}
+                alt={member.name + " at Flicker Engineering"}
                 loading="lazy"
                 data-aos="fade-right"
                 data-aos-duration={index * 500}

@@ -12,7 +12,7 @@ const Slider = () => {
   const [swiper, setSwiper] = useState<SwiperCore | null>(null);
 
   return (
-    <section className="w-full relative group">
+    <header className="w-full relative group">
       <Swiper
         onSwiper={setSwiper}
         modules={[Pagination, Autoplay]}
@@ -101,10 +101,10 @@ const Slider = () => {
                   </div>
                   <div className="h-14 lg:h-72 flex items-center justify-center">
                     <img
-                      src="/images/hero.png"
+                      src="/images/hero.webp"
                       alt="Flicker Engineering"
                       className="w-full scale-117 h-auto absolute top-0 left-[-1em]"
-                      loading="lazy"
+                      // loading="lazy"
                       data-aos="fade-up"
                       data-aos-anchor-placement="bottom-bottom"
                       data-aos-duration="500"
@@ -131,9 +131,9 @@ const Slider = () => {
         <SwiperSlide>
           <div className="__s_container">
             <img
-              src="images/cover/2.jpeg"
+              src="images/cover/2.webp"
               loading="lazy"
-              alt="Dummy Image 2"
+              alt="Flicker Engineering"
               className="w-full h-full object-cover"
             />
             {/* <div className="__slider">
@@ -144,9 +144,9 @@ const Slider = () => {
         <SwiperSlide>
           <div className="__s_container">
             <img
-              src="images/cover/3.jpeg"
+              src="images/cover/3.webp"
               loading="lazy"
-              alt="Dummy Image 3"
+              alt="Flicker Engineering"
               className="w-full h-full object-cover"
             />
             {/* <div className="__slider">
@@ -157,9 +157,9 @@ const Slider = () => {
         <SwiperSlide>
           <div className="__s_container">
             <img
-              src="images/cover/4.jpeg"
+              src="images/cover/4.webp"
               loading="lazy"
-              alt="Dummy Image 4"
+              alt="Flicker Engineering"
               className="w-full h-full object-cover"
             />
             {/* <div className="__slider">
@@ -170,9 +170,9 @@ const Slider = () => {
         <SwiperSlide>
           <div className="__s_container">
             <img
-              src="images/cover/5.jpeg"
+              src="images/cover/5.webp"
               loading="lazy"
-              alt="Dummy Image 3"
+              alt="Flicker Engineering"
               className="w-full h-full object-cover"
             />
             {/* <div className="__slider">
@@ -183,9 +183,22 @@ const Slider = () => {
         <SwiperSlide>
           <div className="__s_container">
             <img
-              src="images/cover/6.jpeg"
+              src="images/cover/6.webp"
               loading="lazy"
-              alt="Dummy Image 3"
+              alt="Flicker Engineering"
+              className="w-full h-full object-cover"
+            />
+            {/* <div className="__slider">
+              <p className="text-white text-4xl font-bold">Dummy Text 3</p>
+            </div> */}
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="__s_container">
+            <img
+              src="images/cover/7.webp"
+              loading="lazy"
+              alt="Flicker Engineering"
               className="w-full h-full object-cover"
             />
             {/* <div className="__slider">
@@ -228,7 +241,7 @@ const Slider = () => {
           </svg>
         </button>
       </div>
-    </section>
+    </header>
   );
 };
 

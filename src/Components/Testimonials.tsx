@@ -51,7 +51,7 @@ export default function Testimonials() {
           >
             <img
               src={t.avatar}
-              alt={t.name}
+              alt={t.name + " at Flicker Engineering"}
               loading="lazy"
               className="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-accent"
               data-aos="zoom-in"

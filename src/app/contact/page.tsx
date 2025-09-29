@@ -28,16 +28,16 @@ export default function ContactUsPage() {
     <>
       <Header />
       <main>
-        <section className="py-8 md:py-12 lg:py-16 hero-bg text-center text-white px-6 md:px-20 ">
+        <header className="py-8 md:py-12 lg:py-16 hero-bg text-center text-white px-6 md:px-20 ">
           <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold mb-4 max-w-4xl mx-auto">
             Let&apos;s Start Your Next Project
           </h1>
-          <p className="max-w-4xl mx-auto">
+          <h2 className="max-w-4xl mx-auto text-xl">
             Ready to transform your engineering vision into reality? Get in
             touch with our expert team for professional consultation and
             innovative solutions.
-          </p>
-        </section>
+          </h2>
+        </header>
 
         <ContactUs />
 
